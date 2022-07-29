@@ -1,0 +1,346 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0px;
+    }
+    /* ************************** Menu Container ****************************** */
+    
+    .menu-container {
+        height: 5.5rem;
+        background-color: aqua;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+    }
+    
+    .compartment1 {
+        height: 60%;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        /* border: 1px solid red; */
+    }
+    
+    .file-name {
+        height: 50%;
+        margin-top: 4px;
+        color: gray;
+        border: none;
+        font-size: 18px;
+        margin-left: 1rem;
+        border: 1px solid transparent;
+        outline: none;
+        /* font-variant-ligatures: no-contextual; */
+        /* border-radius: 2px;
+        color: #fff;
+        font-size: 18px;
+        font-variant-ligatures: no-contextual;
+        height: 20px;
+        line-height: 22px;
+        margin: 0;
+        min-width: 1px;
+        padding: 2px 7px; */
+    }
+    
+    .file-name:hover {
+        outline: 1px solid gray;
+    }
+    
+    .on-pc {
+        height: 50%;
+        margin-top: 4px;
+        color: gray;
+        font-size: 18px;
+        background-color: transparent;
+        border: 0px solid;
+        outline: none;
+    }
+    
+    .excel-image {
+        display: block;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+    .compartment2 {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        border-top: 1px solid rgb(202, 200, 200);
+        display: flex;
+        align-items: center;
+    }
+    
+    .bui span {
+        border-radius: 2px;
+        margin: 0 auto;
+    }
+    
+    .bui span:hover {
+        cursor: pointer;
+        background-color:lightgreen;
+    }
+    
+    .bui {
+        min-width: 1rem;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 17rem;
+    }
+    
+    .font-size {
+        margin-left: 2rem;
+    }
+    
+    .align-container {
+        position: absolute;
+        min-width: 1rem;
+        display: flex;
+        left: 23rem;
+        /* margin-left: 2rem; */
+    }
+    
+    .text-colour {
+        position: absolute;
+        opacity: 0;
+        width: 1px;
+        left: 1px;
+    }
+    
+    .bg-colour {
+        position: absolute;
+        opacity: 0;
+        width: 1px;
+        right: 1px;
+    }
+    
+    .align-container span {
+        border-radius: 2px;
+        margin: 0 auto;
+    }
+    
+    .font-family {
+        margin-left: 2rem;
+    }
+    
+    .align-container span:hover {
+        cursor: pointer;
+        background-color: lightgreen;
+    }
+    /* ****************formula container********************** */
+    
+    .formula-container {
+        height: 1.4rem;
+        background-color: white;
+        border: 1px solid rgb(202, 201, 201);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-top: 1px solid rgb(202, 201, 201);
+    }
+    
+    .address-input {
+        height: 100%;
+        width: 5.5rem;
+        border: none;
+        outline: none;
+    }
+    
+    .formula-input {
+        height: 100%;
+        width: calc(100vw - 5.5rem);
+        border: none;
+        outline: none;
+    }
+    
+    .colour-container {
+        display: flex;
+        min-width: 2rem;
+        position: absolute;
+        left: 30rem;
+    }
+    
+    .colour-container span:hover {
+        cursor: pointer;
+    }
+    
+    .fomula-symbol {
+        border-left: 0.5px solid gray;
+        border-right: 0.5px solid gray;
+        padding: 1px;
+        border-left: 1px solid rgb(202, 201, 201);
+        border-right: 1px solid rgb(202, 201, 201);
+    }
+    
+    .editing-sheet {
+        display: flex;
+        min-width: 2rem;
+        position: absolute;
+        right: 2rem;
+    }
+    
+    .editing-sheet span:hover {
+        cursor: pointer;
+        background-color: rgb(202, 199, 199);
+    }
+    
+    .formulaimage {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .sheet-container {
+        height: 3rem;
+        background-color: white;
+        display: flex;
+        border-bottom: 1px solid rgb(204, 204, 204);
+    }
+    
+    .grid {
+        height: calc( 100vh - ( 5.5rem + 1.4rem + 1.2rem + 1.5rem));
+        overflow: auto;
+        position: relative;
+        background-color: rgb(187, 187, 187);
+    }
+    
+    .state {
+        height: 100%;
+        width: 3rem;
+        border-right: 1px solid rgb(202, 200, 200);
+    }
+    
+    .add-sheet-btn {
+        height: 100%;
+        width: 3rem;
+        border-right: 0.1px solid rgb(202, 202, 202);
+        border-top: 0.1px solid rgb(202, 200, 200);
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        color: rgb(102, 102, 102);
+    }
+    
+    .add-sheet-btn span {
+        padding: 2px;
+        font-size: small;
+        display: flex;
+        align-items: center;
+    }
+    
+    .add-sheet-btn:hover {
+        cursor: pointer;
+        background-color: rgb(202, 199, 199);
+    }
+    
+    .active {
+        background-color: rgb(207, 207, 207);
+    }
+    
+    .plus-sign {
+        margin-left: 0.9rem;
+        margin-top: 0.05rem;
+    }
+    
+    .sheet-list {
+        height: 100%;
+        width: calc(100vw - 3rem);
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+    }
+    
+    .sheets {
+        height: 100%;
+        width: 4rem;
+        outline: 0px transparent;
+        border-top: 1px solid rgb(202, 200, 200);
+        border-right: 1px solid rgb(202, 200, 200);
+        color: lightgreen;
+        font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+        font-size: smaller;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .sheets:hover {
+        cursor: pointer;
+    }
+    
+    .ready-bar {
+        height: 1.5rem;
+        background-color: white;
+    }
+    
+    .grid-linings .cells {
+        text-align: left;
+    }
+    
+    .grid-linings {
+        background-color: white;
+        position: absolute;
+        top: 1.3rem;
+        left: 2rem;
+        z-index: 0;
+    }
+    
+    .top-row {
+        height: 1.3rem;
+        display: flex;
+        position: sticky;
+        top: 0px;
+        padding-left: 2rem;
+        z-index: 2;
+        background-color: #dadce0;
+        border-right: 1px solid rgb(202, 201, 201);
+    }
+    
+    .left-col {
+        position: sticky;
+        left: 0px;
+        z-index: 1;
+        width: 2rem;
+    }
+    
+    .left-box {
+        background-color: dadce0;
+        border-right: 1px solid rgb(202, 201, 201);
+        position: fixed;
+        top: 6.5rem;
+        left: 0px;
+        z-index: 7;
+    }
+    
+    .box {
+        height: 1.3rem;
+        width: 2rem;
+        text-align: center;
+        border-bottom: 1px solid rgb(202, 201, 201);
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 3px;
+        background-color:lightgreen;
+    }
+    
+    .cells {
+        height: 1.3rem;
+        min-width: 4.2rem;
+        cursor: cell;
+        text-align: center;
+        border-right: 1px solid rgb(200, 198, 198);
+        border-bottom: 1px solid rgb(202, 201, 201);
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+        outline: none;
+        word-wrap: normal;
+        background-color: lightgreen;
+    }
+    
+    .row {
+        display: flex;
+    }

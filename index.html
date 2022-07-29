@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div class="menu-container">
+       
+        <div class=" compartment2 ">
+            <select class="font-size">
+                <option value="6" >6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10" >10</option>
+                <option value="11">11</option>
+                <option value="12" selected >12</option>
+                <option value="14">14</option>
+                <option value="18">18</option>
+                <option value="24">24</option>
+                <option value="36">36</option>
+            </select>
+
+            <select class="font-family ">
+                <option value="Calibri ">Calibri</option>
+                <option value="Verdana ">Verdana</option>
+                <option value="serif ">serif</option>
+                <option value="Tahoma ">Tahoma</option>
+                <option value="Times New Roman ">Times New Roman</option>
+                <option value="fantasy ">fantasy</option>
+                <option value="cursive ">cursive</option>
+                <option value="system-ui ">system-ui</option>
+                <option value="fangsong ">fangsong</option>
+                <option value="inherit ">inherit</option>
+                <option value="math ">math</option>
+                <option value="Arial " selected>Arial</option>
+            </select>
+            <div class="bui">
+
+                <span class="material-icons-outlined bold" style="font-size:x-large ">format_bold</span>
+                <span class="material-icons-outlined italic" style="font-size:x-large ">format_italic</span>
+                <span class="material-icons-outlined underline" style="font-size:x-large ">format_underlined</span>
+            </div>
+            <div class="align-container ">
+                <span class="material-icons-outlined left ">format_align_left</span>
+                <span class="material-icons-outlined center ">format_align_center</span>
+                <span class="material-icons-outlined right ">format_align_right</span>
+                <span class="material-icons-outlined justify ">format_align_justify</span>
+            </div>
+            <div class="colour-container ">
+                <input type="color" class="text-colour">
+                <span class="material-icons-outlined coloured">format_color_text</span>
+                <span class="material-icons-outlined coloured">format_color_fill</span>
+                <input type="color" class="bg-colour">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="formula-container">
+        <input type="text" class="address-input" readonly>
+        <div class="fomula-symbol ">
+            <img src="https://img.icons8.com/ios/50/000000/formula-fx.png " width="20 " height="20 " class=" formulaimage ">
+        </div>
+        <input type="text" class="formula-input">
+    </div>
+    <div class="grid ">
+        <div class="left-box box"></div>
+        <div class="top-row"></div>
+        <div class="left-col"></div>
+        <div class="grid-linings">
+            <div class="rows">
+            </div>
+        </div>
+    </div>
+    <div class="sheet-container">
+        <div class="add-sheet-btn">
+            <span class="material-icons">add</span>
+        </div>
+        <div class="sheet-list">
+            <div class="sheets" idx="0" contenteditable="true" spellcheck="false">Sheet1</div>
+            <div class="sheets" idx="1" contenteditable="true" spellcheck="false">Sheet2</div>
+            <div class="sheets" idx="2" contenteditable="true" spellcheck="false">Sheet3</div>
+        </div>
+    </div>
+    <script src="grid.js"></script>
+    <script src="formula.js"></script>
+
+</body>
+
+</html>
+
+</html>
